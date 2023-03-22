@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using ordersSystem.Api.Services;
 using ordersSystem.DataAccessLayer;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -14,9 +15,18 @@ builder.Services.AddDbContext<PostgresContext>(x =>
 });
 builder.Services.AddTransient(typeof(IUnitOfWork<>), typeof(PostgresUnitOfWork));
 
+builder.Services.AddCors(o => o.AddPolicy("CommonPolicy", builder =>
+{
+    builder.AllowAnyOrigin()
+        .AllowAnyMethod()
+        .AllowAnyHeader();
+}));
+
+builder.Services.AddConfiguration(builder.Configuration);
+
 var app = builder.Build();
 
-if (app.Environment.IsDevelopment())
+if  (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();

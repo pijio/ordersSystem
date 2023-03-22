@@ -7,7 +7,11 @@
     <projectFile profileName="ordersSystem.Api">ordersSystem.Api/ordersSystem.Api.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e8811996-4f77-46e3-b127-148ac40bad68" name="Changes" comment="" />
+    <list default="true" id="e8811996-4f77-46e3-b127-148ac40bad68" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ordersSystem/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ordersSystem/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ordersSystem.Api/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ordersSystem.Api/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ordersSystem.Api/Services/ServiceCollectionExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ordersSystem.Api/Services/ServiceCollectionExtensions.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -108,7 +112,7 @@
       <option name="presentableId" value="Default" />
       <updated>1679479120729</updated>
       <workItem from="1679479120743" duration="1577000" />
-      <workItem from="1679481895975" duration="5803000" />
+      <workItem from="1679481895975" duration="6712000" />
     </task>
     <servers />
   </component>
