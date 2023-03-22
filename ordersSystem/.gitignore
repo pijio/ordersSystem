@@ -1,0 +1,7 @@
+bin/
+obj/
+/packages/
+riderModule.iml
+/_ReSharper.Caches/
+InternetShop.Api/Logs/
+InternetShop.Api/obj/
