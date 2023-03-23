@@ -13,7 +13,9 @@ builder.Services.AddDbContext<PostgresContext>(x =>
 {
     x.UseNpgsql(connString);
 });
-builder.Services.AddTransient(typeof(IUnitOfWork<>), typeof(PostgresUnitOfWork));
+builder.Services.AddScoped(typeof(IUnitOfWork), typeof(PostgresUnitOfWork));
+
+builder.Services.AddScoped(typeof(OrderService));
 
 builder.Services.AddCors(o => o.AddPolicy("CommonPolicy", builder =>
 {

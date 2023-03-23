@@ -21,10 +21,6 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Controllers" />
-    </ItemGroup>
-
-    <ItemGroup>
       <ProjectReference Include="..\ordersSystem.DataAccessLayer\ordersSystem.DataAccessLayer.csproj" />
     </ItemGroup>
 

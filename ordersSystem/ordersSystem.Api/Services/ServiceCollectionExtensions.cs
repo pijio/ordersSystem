@@ -12,6 +12,6 @@ public static class ServiceCollectionExtensions
     /// <param name="finalConfig">Объект со всеми конфигурациями и провайдерами</param>
     public static void AddConfiguration(this IServiceCollection services, IConfiguration finalConfig)
     {
-        services.AddSingleton<IConfiguration>(finalConfig);
+        services.AddSingleton(finalConfig);
     }
 }

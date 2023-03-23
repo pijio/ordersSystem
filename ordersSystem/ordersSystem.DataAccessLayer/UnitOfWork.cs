@@ -4,7 +4,7 @@ using ordersSystem.DomainModels;
 
 namespace ordersSystem.DataAccessLayer;
 
-public class UnitOfWork<TContext> : IUnitOfWork<TContext>, IDisposable where TContext : DbContext
+public class UnitOfWork<TContext> : IUnitOfWork, IDisposable where TContext : DbContext
 {
     protected readonly ConcurrentDictionary<Type, object> RepsDictionary;
     protected readonly TContext DbContext;
